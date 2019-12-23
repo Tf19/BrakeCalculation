@@ -1,0 +1,31 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.jfx-tab-pane .tab-header-background {
+	-fx-background-color: #c8c8c8;
+}
+
+.tab-pane:top *.tab-header-area {
+-fx-background-insets: 0.0, 0.0 0.0 0.0 0.0;
+-fx-padding: 0.0em 0.0em 0.0em 0.0em; /* overridden as 5 2 0 0 */
+}
+
+.tab {
+	-fx-background-color: #c8c8c8;
+	-fx-background-insets: 0.0, 0.0 0.0 0.0 0.0;
+}
+
+.tab:selected {
+	-fx-background-color: #969696;
+}
+
+.jfx-tab-pane .headers-region > .tab > .jfx-rippler {
+    -jfx-rippler-fill: e9677b;
+}
+
+.jfx-tab-pane .headers-region .tab-selected-line {
+    -fx-background-color: e9677b;
+    height: 10.0;
+}
+
+.button {
+	-fx-background-color: e9677b;
+}

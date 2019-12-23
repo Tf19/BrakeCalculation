@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerMain">
+   <center>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="450.0">
+         <children>
+            <GridPane fx:id="trainGrid" alignment="CENTER" layoutX="20.0" layoutY="56.0" nodeOrientation="LEFT_TO_RIGHT" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="56.0">
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="3.5" prefWidth="20.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="12.5" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="20.0" minWidth="10.0" percentWidth="3.5" prefWidth="20.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="12.5" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="3.5" prefWidth="20.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="12.5" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="3.5" prefWidth="20.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="12.5" prefWidth="0.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="3.5" prefWidth="20.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="12.5" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="3.5" prefWidth="20.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="12.5" prefWidth="0.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" percentWidth="3.5" prefWidth="20.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="110.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="110.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="110.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="110.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseEntered="#onTick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="5">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="7">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="3">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="5">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="7">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="3">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="5">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="7">
+                     <image>
+                        <Image url="@../../../../Downloads/delete-50px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="6">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="6">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="311.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/add_vehicle-100x150.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <Label layoutX="20.0" layoutY="20.0" text="Zugverband">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView accessibleHelp="Fahrtrichtung ändern" accessibleText="Fahrtrichtung ändern" fitHeight="30.0" fitWidth="30.0" layoutX="129.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/swap_horiz-50px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text fill="RED" layoutX="518.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximale Zuglänge erreicht!" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="165.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/delete_forever-50px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text layoutX="372.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fahrtrichtung">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="342.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/arrow_back_left-50px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="449.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/arrow_back_right-50px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane>
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Angaben laut Fahrplan">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="14.0" layoutY="41.0" prefHeight="30.0" prefWidth="860.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="67.0" minWidth="10.0" prefWidth="57.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="97.0" minWidth="10.0" prefWidth="58.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="87.0" minWidth="10.0" prefWidth="85.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="77.0" minWidth="10.0" prefWidth="62.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="127.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.0" minWidth="10.0" prefWidth="102.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="96.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="86.0" minWidth="10.0" prefWidth="49.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="102.0" minWidth="10.0" prefWidth="81.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="VMZ">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="ttVmz" alignment="CENTER" prefHeight="25.0" prefWidth="40.0" promptText="120" GridPane.columnIndex="1" />
+                  <Label text="Mbr" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="ttMbr" alignment="CENTER" prefHeight="25.0" prefWidth="45.0" promptText="178" GridPane.columnIndex="3" />
+                  <Label text="in Bremsstellung" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="Masse Wagenzug" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="ttWeightCoaches" alignment="CENTER" prefHeight="25.0" prefWidth="40.0" promptText="250" GridPane.columnIndex="7" />
+                  <Label text="Länge" GridPane.columnIndex="8">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="ttLength" alignment="CENTER" prefHeight="25.0" prefWidth="117.0" promptText="130" GridPane.columnIndex="9" />
+                  <JFXComboBox fx:id="ttBrakePos" prefHeight="17.0" prefWidth="117.0" promptText="R/P" GridPane.columnIndex="5" />
+               </children>
+            </GridPane>
+            <JFXButton layoutX="917.0" layoutY="46.0" onAction="#onTick" ripplerFill="RED" text="Berechnen">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="1156.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/help_outline-50px.png" />
+               </image>
+            </ImageView>
+            <JFXCheckBox layoutX="1019.0" layoutY="47.0" text="autom. berechnen" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <JFXTabPane BorderPane.alignment="CENTER">
+         <tabs>
+            <Tab text="Grunddaten">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutY="8.0" prefHeight="211.0" prefWidth="198.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="4.0" text="Allgemeine Fahrzeugdaten">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <GridPane layoutX="16.0" layoutY="61.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="94.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="106.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Name" />
+                                    <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="125.0" promptText="DABpbzfa" GridPane.columnIndex="1" />
+                                    <Label text="Fahrzeugtyp" GridPane.rowIndex="1" />
+                                    <Label text="Masse (beladen)" GridPane.rowIndex="2" />
+                                    <Label text="Länge" GridPane.rowIndex="3" />
+                                    <Label text="Achsen" GridPane.rowIndex="4" />
+                                    <JFXComboBox prefHeight="17.0" prefWidth="109.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <JFXTextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <JFXTextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <JFXComboBox GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Bremsdaten">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane prefHeight="217.0" prefWidth="232.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Wirksame Einrichtungen">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXToggleButton alignment="CENTER_LEFT" layoutX="14.0" layoutY="133.0" prefHeight="47.0" prefWidth="218.0" selected="true" text="Schnellbremsbeschleuniger" toggleColor="#00c800" toggleLineColor="#64ff64" unToggleColor="#c80000" unToggleLineColor="#ff6464" />
+                              <JFXToggleButton alignment="CENTER_LEFT" layoutX="14.0" layoutY="33.0" prefHeight="47.0" prefWidth="218.0" selected="true" text="Druckluftbremse" toggleColor="#00c800" toggleLineColor="#64ff64" unToggleColor="#c80000" unToggleLineColor="#ff6464" />
+                              <JFXToggleButton alignment="CENTER_LEFT" disable="true" layoutX="14.0" layoutY="83.0" prefHeight="47.0" prefWidth="218.0" text="dynamische Bremse" toggleColor="#00c800" toggleLineColor="#64ff64" unToggleColor="#c80000" unToggleLineColor="#ff6464" />
+                              <JFXToggleButton alignment="CENTER_LEFT" layoutX="14.0" layoutY="183.0" prefHeight="47.0" prefWidth="218.0" selected="true" text="Luftfederung" toggleColor="#00c800" toggleLineColor="#64ff64" unToggleColor="#c80000" unToggleLineColor="#ff6464" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="5.0" layoutY="233.0" prefHeight="323.0" prefWidth="223.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Bremsstellungen und -gewichte">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="47.0" text="Bremsart" />
+                              <GridPane layoutX="14.0" layoutY="102.0" prefHeight="186.0" prefWidth="209.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="86.0" minWidth="10.0" prefWidth="72.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="43.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="21.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="24.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="49.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <JFXCheckBox text="G" GridPane.rowIndex="1" />
+                                    <JFXCheckBox text="P" GridPane.rowIndex="2" />
+                                    <JFXCheckBox text="R" GridPane.rowIndex="3" />
+                                    <Label alignment="CENTER" contentDisplay="CENTER" text="R" textAlignment="CENTER" textFill="RED" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                    <JFXCheckBox text="R+Mg" textFill="RED" GridPane.rowIndex="4" />
+                                    <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                    <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <JFXCheckBox disable="true" text="R+WB" GridPane.rowIndex="5" />
+                                    <JFXCheckBox disable="true" text="R+E" GridPane.rowIndex="6" />
+                                    <JFXCheckBox disable="true" text="R+E160" GridPane.rowIndex="7" />
+                                    <JFXTextField alignment="CENTER" disable="true" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <JFXTextField alignment="CENTER" disable="true" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <JFXTextField alignment="CENTER" disable="true" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <JFXCheckBox prefHeight="29.0" prefWidth="183.0" text="autom. Lastabbremsung" />
+                                 </children>
+                              </GridPane>
+                              <Label layoutX="14.0" layoutY="76.0" text="vorhanden und funktionstüchtig:">
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <JFXComboBox layoutX="78.0" layoutY="39.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </left>
+</BorderPane>
