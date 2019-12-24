@@ -12,6 +12,8 @@ import javax.swing.Painter;
 
 import com.jfoenix.controls.JFXCheckBox;
 import com.jfoenix.controls.JFXComboBox;
+import com.jfoenix.controls.JFXDialog;
+import com.jfoenix.controls.JFXScrollPane;
 import com.jfoenix.controls.JFXTextField;
 
 import javafx.beans.InvalidationListener;
@@ -21,9 +23,13 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Paint;
+import javafx.stage.Stage;
+import layout.AboutPane;
 import layout.VehiclePane;
 
 public class ControllerMain {
@@ -58,5 +64,9 @@ public class ControllerMain {
 	
 	public void initialize() {
 		ttBrakePos.setItems(list);
+	}
+	
+	public void openAbout() {
+		new AboutPane();
 	}
 }

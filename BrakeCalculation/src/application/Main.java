@@ -21,6 +21,7 @@ public class Main extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.setResizable(true);
 			primaryStage.show();
+			primaryStage.setTitle("Bremsberechnung an Reisezügen");
 			
 		} catch(Exception e) {
 			e.printStackTrace();

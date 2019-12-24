@@ -14,7 +14,7 @@
    <children>
       <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Downloads/engine_no_power.png" />
+            <Image url="@../../../../../Downloads/engine_no_power.png" />
          </image>
       </ImageView>
       <GridPane alignment="CENTER" layoutX="5.0" layoutY="3.0" prefHeight="96.0" prefWidth="91.0">
