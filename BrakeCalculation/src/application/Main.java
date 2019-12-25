@@ -1,14 +1,31 @@
 package application;
 
+import java.util.ArrayList;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
+import vehicles.Vehicle;
+import vehicles.Vehicle.Type;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.fxml.FXMLLoader;
 
 
 public class Main extends Application {
+	
+	public static final int MAX_VEHICLES = 24;
+	
+	public static ArrayList<Vehicle> blockTrain = new ArrayList<>();
+	
+	public static Vehicle sampleVehicle = new Vehicle("Lok", Type.WORKING, 84, 19.4f, 4);
+	
+	
+	
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
@@ -26,9 +43,5 @@ public class Main extends Application {
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-	}
-	
-	public static void main(String[] args) {
-		launch(args);
 	}
 }

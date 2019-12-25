@@ -18,14 +18,22 @@
 }
 
 .jfx-tab-pane .headers-region > .tab > .jfx-rippler {
-    -jfx-rippler-fill: e9677b;
+    -jfx-rippler-fill: #E9677B;
 }
 
 .jfx-tab-pane .headers-region .tab-selected-line {
-    -fx-background-color: e9677b;
+    -fx-background-color: #E9677B;
     height: 10.0;
 }
 
 .button {
-	-fx-background-color: e9677b;
+	-fx-background-color: #E9677B;
+}
+
+.jfx-text-field {
+    -jfx-focus-color: #FF0000;
+}
+
+.jfx-combo-box {
+    -jfx-focus-color: #FF0000;
 }

@@ -58,7 +58,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseEntered="#onTick" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="addVehicleOn0" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -66,7 +66,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                  <ImageView fx:id="addVehicleOn1" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn1" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -74,7 +74,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                  <ImageView fx:id="addVehicleOn2" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -82,7 +82,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn3" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -90,7 +90,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn7" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -98,7 +98,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn8" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -106,7 +106,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn9" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -114,7 +114,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn13" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -122,7 +122,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn14" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -130,7 +130,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn15" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -138,7 +138,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn19" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -146,7 +146,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn20" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -154,7 +154,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn21" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -196,7 +196,7 @@
                   </ImageView>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
                      <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
+                        <Image url="@../../../../../Downloads/el1.png" />
                      </image>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -346,7 +346,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn4" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -354,7 +354,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn10" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -362,7 +362,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn16" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -370,7 +370,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn22" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -378,7 +378,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn5" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -386,7 +386,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="2">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn11" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="2">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -394,7 +394,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="4">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn17" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="4">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -402,7 +402,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="6">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn23" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="6">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -410,7 +410,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="6">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn18" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="4">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -418,7 +418,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="4">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn12" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="2">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -426,7 +426,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="2">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn6" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -434,15 +434,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12">
-                     <image>
-                        <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="311.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="311.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -457,7 +449,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <ImageView accessibleHelp="Fahrtrichtung ändern" accessibleText="Fahrtrichtung ändern" fitHeight="30.0" fitWidth="30.0" layoutX="129.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="btReverse" accessibleHelp="Fahrtrichtung ändern" accessibleText="Fahrtrichtung ändern" fitHeight="30.0" fitWidth="30.0" layoutX="129.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../Downloads/swap_horiz-50px.png" />
                </image>
@@ -465,8 +457,8 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <Text fill="RED" layoutX="518.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximale Zuglänge erreicht!" />
-            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="165.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+            <Text fill="RED" layoutX="518.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximale Zuglänge erreicht" />
+            <ImageView fx:id="btDeleteBlockTrain" fitHeight="30.0" fitWidth="30.0" layoutX="165.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../Downloads/delete_forever-50px.png" />
                </image>
@@ -522,13 +514,13 @@
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <JFXTextField fx:id="ttVmz" alignment="CENTER" prefHeight="25.0" prefWidth="40.0" promptText="120" GridPane.columnIndex="1" />
+                  <JFXTextField fx:id="ttVmz" alignment="CENTER" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" />
                   <Label text="Mbr" GridPane.columnIndex="2">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <JFXTextField fx:id="ttMbr" alignment="CENTER" prefHeight="25.0" prefWidth="45.0" promptText="178" GridPane.columnIndex="3" />
+                  <JFXTextField fx:id="ttMbr" alignment="CENTER" prefHeight="25.0" prefWidth="45.0" GridPane.columnIndex="3" />
                   <Label text="in Bremsstellung" GridPane.columnIndex="4">
                      <font>
                         <Font name="System Bold" size="12.0" />
@@ -539,14 +531,14 @@
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <JFXTextField fx:id="ttWeightCoaches" alignment="CENTER" prefHeight="25.0" prefWidth="40.0" promptText="250" GridPane.columnIndex="7" />
+                  <JFXTextField fx:id="ttWeightCoaches" alignment="CENTER" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="7" />
                   <Label text="Länge" GridPane.columnIndex="8">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <JFXTextField fx:id="ttLength" alignment="CENTER" prefHeight="25.0" prefWidth="117.0" promptText="130" GridPane.columnIndex="9" />
-                  <JFXComboBox fx:id="ttBrakePos" prefHeight="17.0" prefWidth="117.0" promptText="R/P" GridPane.columnIndex="5" />
+                  <JFXTextField fx:id="ttLength" alignment="CENTER" prefHeight="25.0" prefWidth="117.0" GridPane.columnIndex="9" />
+                  <JFXComboBox fx:id="ttBrakePos" prefHeight="17.0" prefWidth="117.0" GridPane.columnIndex="5" />
                </children>
             </GridPane>
             <JFXButton layoutX="917.0" layoutY="46.0" onAction="#onTick" ripplerFill="RED" text="Berechnen">
@@ -601,15 +593,15 @@
                                 </rowConstraints>
                                  <children>
                                     <Label text="Name" />
-                                    <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="125.0" promptText="DABpbzfa" GridPane.columnIndex="1" />
+                                    <JFXTextField fx:id="bdName" alignment="CENTER" prefHeight="25.0" prefWidth="125.0" promptText="z.B. DABpbzfa" GridPane.columnIndex="1" />
                                     <Label text="Fahrzeugtyp" GridPane.rowIndex="1" />
                                     <Label text="Masse (beladen)" GridPane.rowIndex="2" />
                                     <Label text="Länge" GridPane.rowIndex="3" />
                                     <Label text="Achsen" GridPane.rowIndex="4" />
-                                    <JFXComboBox prefHeight="17.0" prefWidth="109.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                    <JFXTextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                    <JFXTextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                    <JFXComboBox GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <JFXComboBox fx:id="bdVehicleType" prefHeight="17.0" prefWidth="109.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <JFXTextField fx:id="bdWeight" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <JFXTextField fx:id="bdLength" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <JFXComboBox fx:id="bdAxlesCount" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                                  </children>
                               </GridPane>
                            </children>
@@ -629,10 +621,10 @@
                                     <Font name="System Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <JFXToggleButton alignment="CENTER_LEFT" layoutX="14.0" layoutY="133.0" prefHeight="47.0" prefWidth="218.0" selected="true" text="Schnellbremsbeschleuniger" toggleColor="#00c800" toggleLineColor="#64ff64" unToggleColor="#c80000" unToggleLineColor="#ff6464" />
-                              <JFXToggleButton alignment="CENTER_LEFT" layoutX="14.0" layoutY="33.0" prefHeight="47.0" prefWidth="218.0" selected="true" text="Druckluftbremse" toggleColor="#00c800" toggleLineColor="#64ff64" unToggleColor="#c80000" unToggleLineColor="#ff6464" />
-                              <JFXToggleButton alignment="CENTER_LEFT" disable="true" layoutX="14.0" layoutY="83.0" prefHeight="47.0" prefWidth="218.0" text="dynamische Bremse" toggleColor="#00c800" toggleLineColor="#64ff64" unToggleColor="#c80000" unToggleLineColor="#ff6464" />
-                              <JFXToggleButton alignment="CENTER_LEFT" layoutX="14.0" layoutY="183.0" prefHeight="47.0" prefWidth="218.0" selected="true" text="Luftfederung" toggleColor="#00c800" toggleLineColor="#64ff64" unToggleColor="#c80000" unToggleLineColor="#ff6464" />
+                              <JFXToggleButton fx:id="brdBrakePipeAccelerator" alignment="CENTER_LEFT" layoutX="14.0" layoutY="133.0" prefHeight="47.0" prefWidth="218.0" selected="true" text="Schnellbremsbeschleuniger" toggleColor="#00c800" toggleLineColor="#64ff64" unToggleColor="#c80000" unToggleLineColor="#ff6464" />
+                              <JFXToggleButton fx:id="brdPneumBrake" alignment="CENTER_LEFT" layoutX="14.0" layoutY="33.0" prefHeight="47.0" prefWidth="218.0" selected="true" text="Druckluftbremse" toggleColor="#00c800" toggleLineColor="#64ff64" unToggleColor="#c80000" unToggleLineColor="#ff6464" />
+                              <JFXToggleButton fx:id="brdDynamicBrake" alignment="CENTER_LEFT" disable="true" layoutX="14.0" layoutY="83.0" prefHeight="47.0" prefWidth="218.0" text="dynamische Bremse" toggleColor="#00c800" toggleLineColor="#64ff64" unToggleColor="#c80000" unToggleLineColor="#ff6464" />
+                              <JFXToggleButton fx:id="brdAirSuspension" alignment="CENTER_LEFT" layoutX="14.0" layoutY="183.0" prefHeight="47.0" prefWidth="218.0" selected="true" text="Luftfederung" toggleColor="#00c800" toggleLineColor="#64ff64" unToggleColor="#c80000" unToggleLineColor="#ff6464" />
                            </children>
                         </AnchorPane>
                         <AnchorPane layoutX="5.0" layoutY="233.0" prefHeight="323.0" prefWidth="223.0">
@@ -643,12 +635,12 @@
                                  </font>
                               </Label>
                               <Label layoutX="14.0" layoutY="47.0" text="Bremsart" />
-                              <GridPane layoutX="14.0" layoutY="102.0" prefHeight="186.0" prefWidth="209.0">
+                              <GridPane layoutX="14.0" layoutY="102.0" prefHeight="203.0" prefWidth="209.0">
                                  <columnConstraints>
                                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="86.0" minWidth="10.0" prefWidth="72.0" />
                                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="43.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="21.0" />
-                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="24.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="16.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="29.0" />
                                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="49.0" />
                                  </columnConstraints>
                                  <rowConstraints>
@@ -659,26 +651,25 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <JFXCheckBox text="G" GridPane.rowIndex="1" />
-                                    <JFXCheckBox text="P" GridPane.rowIndex="2" />
-                                    <JFXCheckBox text="R" GridPane.rowIndex="3" />
+                                    <JFXCheckBox fx:id="brdPosG" text="G" GridPane.rowIndex="1" />
+                                    <JFXCheckBox fx:id="brdPosP" text="P" GridPane.rowIndex="2" />
+                                    <JFXCheckBox fx:id="brdPosR" text="R" GridPane.rowIndex="3" />
                                     <Label alignment="CENTER" contentDisplay="CENTER" text="R" textAlignment="CENTER" textFill="RED" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                                    <JFXCheckBox text="R+Mg" textFill="RED" GridPane.rowIndex="4" />
+                                    <JFXCheckBox fx:id="brdPosRMg" text="R+Mg" textFill="RED" GridPane.rowIndex="4" />
                                     <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                                     <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                                     <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                                     <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                                    <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                                    <JFXCheckBox disable="true" text="R+WB" GridPane.rowIndex="5" />
-                                    <JFXCheckBox disable="true" text="R+E" GridPane.rowIndex="6" />
-                                    <JFXCheckBox disable="true" text="R+E160" GridPane.rowIndex="7" />
+                                    <JFXTextField alignment="CENTER" focusColor="RED" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <JFXCheckBox fx:id="brdPosRWB" disable="true" text="R+WB" GridPane.rowIndex="6" />
+                                    <JFXCheckBox fx:id="brdPosRE" text="R+E" GridPane.rowIndex="5" />
                                     <JFXTextField alignment="CENTER" disable="true" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                                    <JFXTextField alignment="CENTER" disable="true" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-                                    <JFXTextField alignment="CENTER" disable="true" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                                    <JFXCheckBox prefHeight="29.0" prefWidth="183.0" text="autom. Lastabbremsung" />
+                                    <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                                    <JFXTextField alignment="CENTER" prefHeight="25.0" prefWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <JFXCheckBox fx:id="brdAutoBrakingOfLoad" prefHeight="29.0" prefWidth="183.0" text="autom. Lastabbremsung" />
+                                    <Label alignment="CENTER" contentDisplay="CENTER" text="E160" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5" />
                                  </children>
                               </GridPane>
                               <Label layoutX="14.0" layoutY="76.0" text="vorhanden und funktionstüchtig:">
@@ -686,7 +677,7 @@
                                     <Font name="System Italic" size="12.0" />
                                  </font>
                               </Label>
-                              <JFXComboBox layoutX="78.0" layoutY="39.0" />
+                              <JFXComboBox fx:id="brdBrakeType" layoutX="78.0" layoutY="39.0" />
                            </children>
                         </AnchorPane>
                      </children>
