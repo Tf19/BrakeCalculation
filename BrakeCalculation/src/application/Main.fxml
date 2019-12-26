@@ -58,7 +58,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fx:id="addVehicleOn0" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="addVehicleTo0" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -66,7 +66,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fx:id="addVehicleOn1" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn1" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                  <ImageView fx:id="addVehicleTo1" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn1" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -74,7 +74,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fx:id="addVehicleOn2" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                  <ImageView fx:id="addVehicleTo2" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -82,7 +82,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn3" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6">
+                  <ImageView fx:id="addVehicleTo3" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn3" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -90,7 +90,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn7" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                  <ImageView fx:id="addVehicleTo7" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn7" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -98,7 +98,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn8" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                  <ImageView fx:id="addVehicleTo8" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn8" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -106,7 +106,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn9" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                  <ImageView fx:id="addVehicleTo9" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn9" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -114,7 +114,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn13" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                  <ImageView fx:id="addVehicleTo13" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn13" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -122,7 +122,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn14" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                  <ImageView fx:id="addVehicleTo14" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn14" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -130,7 +130,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn15" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                  <ImageView fx:id="addVehicleTo15" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn15" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -138,7 +138,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn19" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                  <ImageView fx:id="addVehicleTo19" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn19" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -146,7 +146,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn20" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                  <ImageView fx:id="addVehicleTo20" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn20" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -154,7 +154,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn21" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                  <ImageView fx:id="addVehicleTo21" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn21" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -346,7 +346,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn4" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8">
+                  <ImageView fx:id="addVehicleTo4" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn4" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -354,7 +354,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn10" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2">
+                  <ImageView fx:id="addVehicleTo10" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn10" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -362,7 +362,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn16" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4">
+                  <ImageView fx:id="addVehicleTo16" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn16" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -370,7 +370,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn22" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6">
+                  <ImageView fx:id="addVehicleTo22" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn22" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -378,7 +378,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn5" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10">
+                  <ImageView fx:id="addVehicleTo5" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn5" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -386,7 +386,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn11" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="2">
+                  <ImageView fx:id="addVehicleTo11" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn11" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="2">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -394,7 +394,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn17" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="4">
+                  <ImageView fx:id="addVehicleTo17" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn17" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="4">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -402,7 +402,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn23" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="6">
+                  <ImageView fx:id="addVehicleTo23" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn23" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="6">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -410,7 +410,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn18" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="4">
+                  <ImageView fx:id="addVehicleTo18" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn18" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="4">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -418,7 +418,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn12" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="2">
+                  <ImageView fx:id="addVehicleTo12" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn12" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="2">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
@@ -426,7 +426,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn6" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12">
+                  <ImageView fx:id="addVehicleTo6" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn6" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
                      </image>
