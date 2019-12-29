@@ -1,7 +1,5 @@
 package application;
 
-import java.io.IOException;
-
 import com.jfoenix.controls.JFXCheckBox;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
@@ -10,11 +8,11 @@ import com.jfoenix.controls.JFXToggleButton;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import layout.AboutPane;
+import vehicles.Vehicle;
 
 public class ControllerMain {
 
@@ -145,123 +143,152 @@ public class ControllerMain {
 				addVehicleTo23 };
 		for (ImageView imageView : addVehicleList)
 			imageView.setVisible(false);
-	}
-
-	public void addVehicleOn0() {
-		addVehicleOn(0);
-	}
-
-	public void addVehicleOn1() {
-		addVehicleOn(1);
-	}
-
-	public void addVehicleOn2() {
-		addVehicleOn(2);
-	}
-
-	public void addVehicleOn3() {
-		addVehicleOn(3);
-	}
-
-	public void addVehicleOn4() {
-		addVehicleOn(4);
-	}
-
-	public void addVehicleOn5() {
-		addVehicleOn(5);
-	}
-
-	public void addVehicleOn6() {
-		addVehicleOn(6);
-	}
-
-	public void addVehicleOn7() {
-		addVehicleOn(7);
-	}
-
-	public void addVehicleOn8() {
-		addVehicleOn(8);
-	}
-
-	public void addVehicleOn9() {
-		addVehicleOn(9);
-	}
-
-	public void addVehicleOn10() {
-		addVehicleOn(10);
-	}
-
-	public void addVehicleOn11() {
-		addVehicleOn(11);
-	}
-
-	public void addVehicleOn12() {
-		addVehicleOn(12);
-	}
-
-	public void addVehicleOn13() {
-		addVehicleOn(13);
-	}
-
-	public void addVehicleOn14() {
-		addVehicleOn(14);
-	}
-
-	public void addVehicleOn15() {
-		addVehicleOn(15);
-	}
-
-	public void addVehicleOn16() {
-		addVehicleOn(16);
-	}
-
-	public void addVehicleOn17() {
-		addVehicleOn(17);
-	}
-
-	public void addVehicleOn18() {
-		addVehicleOn(18);
-	}
-
-	public void addVehicleOn19() {
-		addVehicleOn(19);
-	}
-
-	public void addVehicleOn20() {
-		addVehicleOn(20);
-	}
-
-	public void addVehicleOn21() {
-		addVehicleOn(21);
-	}
-
-	public void addVehicleOn22() {
-		addVehicleOn(22);
-	}
-
-	public void addVehicleOn23() {
-		addVehicleOn(23);
-	}
-
-	public void addVehicleOn(int index) {
-		// TODO
-		System.out.println("Place a new vehicle to " + index);
-	}
-	
-	public void placeSampleVehicle() {
 		addVehicleList[0].setVisible(true);
 		addVehicleList[1].setVisible(true);
 	}
 
-	public void onTick() {
-		AnchorPane v;
-		try {
-			v = (AnchorPane) FXMLLoader.load(getClass().getResource("/layout/Vehicle.fxml"));
-			trainGridPane.add(v, 1, 0);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+	@FXML
+	public void addVehicleOn0() {
+		System.out.println("FXML ausgeführt, Weiterleitung an addVehicleOn(0):");
+		addVehicleOn(0, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn1() {
+		addVehicleOn(1, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn2() {
+		addVehicleOn(2, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn3() {
+		addVehicleOn(3, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn4() {
+		addVehicleOn(4, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn5() {
+		addVehicleOn(5, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn6() {
+		addVehicleOn(6, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn7() {
+		addVehicleOn(7, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn8() {
+		addVehicleOn(8, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn9() {
+		addVehicleOn(9, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn10() {
+		addVehicleOn(10, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn11() {
+		addVehicleOn(11, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn12() {
+		addVehicleOn(12, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn13() {
+		addVehicleOn(13, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn14() {
+		addVehicleOn(14, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn15() {
+		addVehicleOn(15, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn16() {
+		addVehicleOn(16, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn17() {
+		addVehicleOn(17, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn18() {
+		addVehicleOn(18, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn19() {
+		addVehicleOn(19, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn20() {
+		addVehicleOn(20, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn21() {
+		addVehicleOn(21, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn22() {
+		addVehicleOn(22, Main.defaultVehicle);
+	}
+
+	@FXML
+	public void addVehicleOn23() {
+		addVehicleOn(23, Main.defaultVehicle);
+	}
+
+	public void addVehicleOn(int index, Vehicle vehicle) {
+		System.out.println("Endmethode, Vehicle wird im Folgenden geaddet:");
+		Main.blockTrain.add(index, vehicle);
+	}
+
+	public void addSampleVehicle() {
+		addVehicleOn(0, Main.sampleVehicle);
+	}
+	
+	public void addVehiclePaneToGrid(int vehicleIndex, AnchorPane vehiclePane) {
+		
+		int column = (vehicleIndex % 6)*2+1;
+		int row = 0;
+		while(vehicleIndex > 6) {
+			vehicleIndex -= 6;
+			row += 2;
 		}
+		trainGridPane.add(vehiclePane, column, row);
+		System.out.println("Children: " + trainGridPane.getChildren());
+		
+		System.out.println("Added at: " + column + "/" + row);
 	}
 
 	public void openAbout() {

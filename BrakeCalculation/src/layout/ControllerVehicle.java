@@ -6,5 +6,5 @@ import javafx.scene.control.Label;
 public class ControllerVehicle {
 
 	@FXML
-	Label vName;
+	public Label vName;
 }

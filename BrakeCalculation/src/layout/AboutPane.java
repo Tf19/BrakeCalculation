@@ -19,6 +19,7 @@ public class AboutPane extends Stage {
 			Scene scene = new Scene(root);
 	        stage.setScene(scene);
 	        stage.show();
+	        stage.setTitle("Hilfe");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
