@@ -16,12 +16,20 @@ public class Main extends Application {
 	
 	public static BlockTrain blockTrain = new BlockTrain();
 	
-	public static Vehicle sampleVehicle = new Vehicle(-1, "Bsp-Lok", Type.WORKING, 84, 19.4f, 4);
-	public static Vehicle defaultVehicle = new Vehicle(-1, "Tfz", Type.WORKING, 0, 0, 4);
+//	public static Vehicle sampleVehicle = new Vehicle(-1, "Bsp-Lok", Type.WORKING, 84, 19.4f, 4);
+//	public static Vehicle defaultVehicle = new Vehicle(-1, "Tfz", Type.WORKING, 0, 0, 4);
 	
 	private FXMLLoader loader;
 	private BorderPane root;
-	public static ControllerMain controller; 
+	public static ControllerMain controller;
+	
+	public static Vehicle newDefaultVehicle() {
+		return new Vehicle(-1, "Tfz", Type.WORKING, 0, 0, 4);
+	}
+	
+	public static Vehicle newSampleVehicle() {
+		return new Vehicle(-1, "Bsp-Lok", Type.WORKING, 84, 19.4f, 4);
+	}
 	
 	
 	public static void main(String[] args) {

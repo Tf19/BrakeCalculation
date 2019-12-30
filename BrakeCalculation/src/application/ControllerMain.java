@@ -11,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.text.Text;
 import layout.AboutPane;
 import vehicles.Vehicle;
 
@@ -76,6 +77,8 @@ public class ControllerMain {
 	public ImageView btReverse;
 	@FXML
 	public ImageView btDeleteBlockTrain;
+	@FXML
+	public Text btMaxLengthReached;
 
 	// Grid
 	@FXML
@@ -145,150 +148,229 @@ public class ControllerMain {
 			imageView.setVisible(false);
 		addVehicleList[0].setVisible(true);
 		addVehicleList[1].setVisible(true);
+
+		btMaxLengthReached.setVisible(false);
+	}
+	
+	@FXML
+	public void bdNameTextChanged() {
+		System.out.println("Text changed!");
+		for (Vehicle vehicle : Main.blockTrain) {
+			if(vehicle.controller.isSelected()) {
+				vehicle.setName(bdName.getText());
+			}
+		}
+	}
+
+	@FXML
+	public void clearBlockTrain() {
+		Main.blockTrain.clear();
+		updateAddButtons();
+	}
+
+	@FXML
+	public void deleteSelectedVehicle() {
+
+		int x = -1;
+		for (int i = 0; i < Main.blockTrain.size(); i++) {
+			if (Main.blockTrain.get(i).controller.isSelected()) {
+				Main.blockTrain.remove(Main.blockTrain.get(i).getIndex());
+				x = i;
+			}
+		}
+		if (x >= 0)
+			pushBackwardsFollowingPanes(x);
+		updateAddButtons();
 	}
 
 	@FXML
 	public void addVehicleOn0() {
-		System.out.println("FXML ausgeführt, Weiterleitung an addVehicleOn(0):");
-		addVehicleOn(0, Main.defaultVehicle);
+//		System.out.println("FXML ausgeführt, Weiterleitung an addVehicleOn(0):");
+		addVehicleOn(0, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn1() {
-		addVehicleOn(1, Main.defaultVehicle);
+		addVehicleOn(1, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn2() {
-		addVehicleOn(2, Main.defaultVehicle);
+		addVehicleOn(2, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn3() {
-		addVehicleOn(3, Main.defaultVehicle);
+		addVehicleOn(3, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn4() {
-		addVehicleOn(4, Main.defaultVehicle);
+		addVehicleOn(4, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn5() {
-		addVehicleOn(5, Main.defaultVehicle);
+		addVehicleOn(5, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn6() {
-		addVehicleOn(6, Main.defaultVehicle);
+		addVehicleOn(6, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn7() {
-		addVehicleOn(7, Main.defaultVehicle);
+		addVehicleOn(7, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn8() {
-		addVehicleOn(8, Main.defaultVehicle);
+		addVehicleOn(8, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn9() {
-		addVehicleOn(9, Main.defaultVehicle);
+		addVehicleOn(9, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn10() {
-		addVehicleOn(10, Main.defaultVehicle);
+		addVehicleOn(10, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn11() {
-		addVehicleOn(11, Main.defaultVehicle);
+		addVehicleOn(11, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn12() {
-		addVehicleOn(12, Main.defaultVehicle);
+		addVehicleOn(12, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn13() {
-		addVehicleOn(13, Main.defaultVehicle);
+		addVehicleOn(13, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn14() {
-		addVehicleOn(14, Main.defaultVehicle);
+		addVehicleOn(14, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn15() {
-		addVehicleOn(15, Main.defaultVehicle);
+		addVehicleOn(15, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn16() {
-		addVehicleOn(16, Main.defaultVehicle);
+		addVehicleOn(16, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn17() {
-		addVehicleOn(17, Main.defaultVehicle);
+		addVehicleOn(17, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn18() {
-		addVehicleOn(18, Main.defaultVehicle);
+		addVehicleOn(18, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn19() {
-		addVehicleOn(19, Main.defaultVehicle);
+		addVehicleOn(19, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn20() {
-		addVehicleOn(20, Main.defaultVehicle);
+		addVehicleOn(20, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn21() {
-		addVehicleOn(21, Main.defaultVehicle);
+		addVehicleOn(21, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn22() {
-		addVehicleOn(22, Main.defaultVehicle);
+		addVehicleOn(22, Main.newDefaultVehicle());
 	}
 
 	@FXML
 	public void addVehicleOn23() {
-		addVehicleOn(23, Main.defaultVehicle);
+		addVehicleOn(23, Main.newDefaultVehicle());
 	}
 
 	public void addVehicleOn(int index, Vehicle vehicle) {
-		System.out.println("Endmethode, Vehicle wird im Folgenden geaddet:");
+//		System.out.println("Endmethode, Vehicle wird im Folgenden geaddet:");
+		if (Main.blockTrain.size() == Main.MAX_VEHICLES)
+			return;
+		else if (Main.blockTrain.size() == Main.MAX_VEHICLES - 1)
+			btMaxLengthReached.setVisible(true);
+		pushForwardFollowingPanes(index);
 		Main.blockTrain.add(index, vehicle);
+		updateAddButtons();
 	}
 
 	public void addSampleVehicle() {
-		addVehicleOn(0, Main.sampleVehicle);
+		addVehicleOn(0, Main.newDefaultVehicle());
 	}
-	
+
 	public void addVehiclePaneToGrid(int vehicleIndex, AnchorPane vehiclePane) {
-		
-		int column = (vehicleIndex % 6)*2+1;
-		int row = 0;
-		while(vehicleIndex > 6) {
-			vehicleIndex -= 6;
-			row += 2;
-		}
+
+//		moveFollowingVehiclePanes(vehicleIndex);
+		int column = (vehicleIndex % 6) * 2 + 1;
+		int row;
+		if (vehicleIndex <= 5)
+			row = 0;
+		else if (vehicleIndex <= 11)
+			row = 2;
+		else if (vehicleIndex <= 17)
+			row = 4;
+		else
+			row = 6;
 		trainGridPane.add(vehiclePane, column, row);
 		System.out.println("Children: " + trainGridPane.getChildren());
-		
+
 		System.out.println("Added at: " + column + "/" + row);
+	}
+
+	public void pushForwardFollowingPanes(int indexToStartWith) {
+		if (Main.blockTrain.size() == 0)
+			return;
+		for (int i = Main.blockTrain.size() - 1; i >= indexToStartWith; i--) {
+			System.out.println("move up: i=" + i + ", size=" + Main.blockTrain.size());
+			Main.blockTrain.get(i).removeFromGrid();
+			Main.blockTrain.get(i).setIndex(Main.blockTrain.get(i).getIndex() + 1);
+			Main.blockTrain.get(i).addToGrid();
+		}
+	}
+
+	public void pushBackwardsFollowingPanes(int indexToStartWith) {
+		if (Main.blockTrain.size() == 0)
+			return;
+		for (int i = indexToStartWith; i < Main.blockTrain.size(); i++) {
+			System.out.println("move down: i=" + i + ", size=" + Main.blockTrain.size());
+			Main.blockTrain.get(i).removeFromGrid();
+			Main.blockTrain.get(i).setIndex(Main.blockTrain.get(i).getIndex() - 1);
+			Main.blockTrain.get(i).addToGrid();
+		}
+	}
+
+	public void updateAddButtons() {
+		if (Main.blockTrain.size() == Main.MAX_VEHICLES) {
+			for (ImageView button : addVehicleList) {
+				button.setVisible(false);
+			}
+		} else {
+			for (int i = 0; i <= Main.blockTrain.size(); i++)
+				addVehicleList[i].setVisible(true);
+			for (int i = Main.blockTrain.size() + 1; i < Main.MAX_VEHICLES; i++)
+				addVehicleList[i].setVisible(false);
+		}
 	}
 
 	public void openAbout() {

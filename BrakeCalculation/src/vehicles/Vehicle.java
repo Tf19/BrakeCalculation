@@ -3,6 +3,7 @@ package vehicles;
 import java.io.IOException;
 
 import application.Main;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
 import layout.ControllerVehicle;
@@ -39,16 +40,13 @@ public class Vehicle {
 		if (this.axes != 2 && this.axes != 4 && this.axes != 6)
 			this.axes = 4;
 
-//		setName(name);
-//		setType(type);
-//		setWeight(weight);
-//		setLength(length);
-//		setAxes(axes);
 		try {
 //			vehiclePane = (AnchorPane) FXMLLoader.load(getClass().getResource("/layout/Vehicle.fxml"));
 			loader = new FXMLLoader(getClass().getResource("/layout/Vehicle.fxml"));
 			vehiclePane = loader.load();
 			controller = loader.getController();
+			controller.setVehicle(this);
+//			System.out.println("New vehiclePane created: " + vehiclePane);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -68,6 +66,20 @@ public class Vehicle {
 		}
 		else if(this.index == -1) throw new IllegalArgumentException("Index == -1. Cannot be added to grid");
 	}
+	
+	public void removeFromGrid() {
+		Main.controller.trainGridPane.getChildren().remove(this.vehiclePane);
+		
+	}
+	
+	private void updateVehiclePane() {
+		controller.vName.setText(this.name);
+		// ...
+	}
+	
+	
+	
+	
 
 	// simple setters & getters |->
 
@@ -87,6 +99,7 @@ public class Vehicle {
 		if (name == null)
 			throw new IllegalArgumentException("Name cannot be null");
 		this.name = name;
+		updateVehiclePane();
 	}
 
 	public Type getType() {
@@ -95,6 +108,7 @@ public class Vehicle {
 
 	public void setType(Type type) {
 		this.type = type;
+		updateVehiclePane();
 	}
 
 	public float getWeight() {
@@ -105,6 +119,7 @@ public class Vehicle {
 		if (weight <= 0)
 			throw new IllegalArgumentException("Weight must be greater than zero");
 		this.weight = weight;
+		updateVehiclePane();
 	}
 
 	public float getLength() {
@@ -115,6 +130,7 @@ public class Vehicle {
 		if (length <= 0)
 			throw new IllegalArgumentException("Length must be greater than zero");
 		this.length = length;
+		updateVehiclePane();
 	}
 
 	public int getAxes() {
@@ -125,6 +141,7 @@ public class Vehicle {
 		if (axes != 2 && axes != 4 && axes != 6)
 			throw new IllegalArgumentException("Axes must be 2, 4 or 6");
 		this.axes = axes;
+		updateVehiclePane();
 	}
 
 	public boolean isPneumBrakeActive() {
@@ -133,6 +150,7 @@ public class Vehicle {
 
 	public void setPneumBrakeActive(boolean pneumBrakeActive) {
 		this.pneumBrakeActive = pneumBrakeActive;
+		updateVehiclePane();
 	}
 
 	public boolean isDynamicBrakeActive() {
@@ -141,6 +159,7 @@ public class Vehicle {
 
 	public void setDynamicBrakeActive(boolean dynamicBrakeActive) {
 		this.dynamicBrakeActive = dynamicBrakeActive;
+		updateVehiclePane();
 	}
 
 	public boolean isBrakePipeAcceleratorActive() {
@@ -149,6 +168,7 @@ public class Vehicle {
 
 	public void setBrakePipeAcceleratorActive(boolean brakePipeAcceleratorActive) {
 		BrakePipeAcceleratorActive = brakePipeAcceleratorActive;
+		updateVehiclePane();
 	}
 
 	public boolean isAirSuspensionActive() {
@@ -157,6 +177,7 @@ public class Vehicle {
 
 	public void setAirSuspensionActive(boolean airSuspensionActive) {
 		AirSuspensionActive = airSuspensionActive;
+		updateVehiclePane();
 	}
 
 	public static enum Type {

@@ -41,23 +41,15 @@
               </columnConstraints>
               <rowConstraints>
                 <RowConstraints minHeight="110.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="110.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="110.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
                   <RowConstraints minHeight="110.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
                   <ImageView fx:id="addVehicleTo0" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
@@ -157,190 +149,6 @@
                   <ImageView fx:id="addVehicleTo21" fitHeight="150.0" fitWidth="30.0" onMouseClicked="#addVehicleOn21" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6">
                      <image>
                         <Image url="@../../../../../Downloads/add_vehicle-100x150.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
-                     <image>
-                        <Image url="@../../../../../Downloads/el1.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="5">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="5">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="7">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="1">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="1">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="3">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="5">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="7">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="3">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="5">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="7">
-                     <image>
-                        <Image url="@../../../../../Downloads/delete-50px.png" />
                      </image>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -457,8 +265,8 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <Text fill="RED" layoutX="339.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximale Zuglänge erreicht" />
-            <ImageView fx:id="btDeleteBlockTrain" fitHeight="30.0" fitWidth="30.0" layoutX="165.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+            <Text fx:id="btMaxLengthReached" fill="RED" layoutX="339.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximale Zuglänge erreicht" />
+            <ImageView fx:id="btDeleteBlockTrain" fitHeight="30.0" fitWidth="30.0" layoutX="165.0" layoutY="20.0" onMouseClicked="#clearBlockTrain" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../Downloads/delete_forever-50px.png" />
                </image>
@@ -466,15 +274,23 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <Text layoutX="232.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fahrtrichtung">
+            <Text layoutX="438.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fahrtrichtung">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Text>
-            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="256.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="452.0" layoutY="544.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../Downloads/arrow_right_alt-50px.png" />
                </image>
+            </ImageView>
+            <ImageView fx:id="btDeleteVehicle" fitHeight="30.0" fitWidth="30.0" layoutX="195.0" layoutY="20.0" onMouseClicked="#deleteSelectedVehicle" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/delete-50px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </ImageView>
          </children>
       </AnchorPane>
@@ -538,7 +354,7 @@
                   <JFXComboBox fx:id="ttBrakePos" prefHeight="17.0" prefWidth="117.0" GridPane.columnIndex="6" />
                </children>
             </GridPane>
-            <JFXButton layoutX="917.0" layoutY="46.0" onAction="#addVehicleOn0" ripplerFill="RED" text="Berechnen">
+            <JFXButton layoutX="917.0" layoutY="46.0" ripplerFill="RED" text="Berechnen">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
@@ -592,7 +408,7 @@
                                 </rowConstraints>
                                  <children>
                                     <Label text="Name" GridPane.rowIndex="2" />
-                                    <JFXTextField fx:id="bdName" alignment="CENTER" prefHeight="25.0" prefWidth="125.0" promptText="z.B. DABpbzfa" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <JFXTextField fx:id="bdName" alignment="CENTER" onKeyReleased="#bdNameTextChanged" prefHeight="25.0" prefWidth="125.0" promptText="z.B. DABpbzfa" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                                     <Label text="Fahrzeugtyp" GridPane.rowIndex="3" />
                                     <Label text="Masse (beladen)" GridPane.rowIndex="4" />
                                     <Label text="Länge" GridPane.rowIndex="5" />
