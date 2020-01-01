@@ -3,6 +3,7 @@ package vehicles;
 import java.util.ArrayList;
 
 import application.Main;
+import vehicles.Vehicle.Type;
 
 public class BlockTrain extends ArrayList<Vehicle> {
 
@@ -17,14 +18,14 @@ public class BlockTrain extends ArrayList<Vehicle> {
 			indexWhereToAdd = Main.blockTrain.size();
 			switch (vehicle.getType()) {
 			case COACH:
-				vehicle.setName("Wagen " + indexWhereToAdd);
+				vehicle.setName("Wagen");
 				break;
 			case WORKING:
 			case NON_WORKING:
-				vehicle.setName("Lok " + indexWhereToAdd);
+				vehicle.setName("Tfz");
 				break;
 			default:
-				vehicle.setName("Fahrzeug " + indexWhereToAdd);
+				vehicle.setName("Fahrzeug");
 				break;
 			}
 			vehicle.setIndex(indexWhereToAdd);
@@ -36,14 +37,14 @@ public class BlockTrain extends ArrayList<Vehicle> {
 			indexWhereToAdd = index;
 			switch (vehicle.getType()) {
 			case COACH:
-				vehicle.setName("Wagen " + indexWhereToAdd);
+				vehicle.setName("Wagen");
 				break;
 			case WORKING:
 			case NON_WORKING:
-				vehicle.setName("Lok " + indexWhereToAdd);
+				vehicle.setName("Tfz");
 				break;
 			default:
-				vehicle.setName("Fahrzeug " + indexWhereToAdd);
+				vehicle.setName("Fahrzeug");
 				break;
 			}
 			vehicle.setIndex(indexWhereToAdd);
@@ -71,5 +72,21 @@ public class BlockTrain extends ArrayList<Vehicle> {
 		for (Vehicle vehicle : this)
 			vehicle.removeFromGrid();
 		super.clear();
+	}
+	
+	public boolean containsCoaches() {
+		boolean returnValue = false;
+		for (Vehicle vehicle : this) {
+			if(vehicle.getType() == Type.COACH) returnValue = true;
+		}
+		return returnValue;
+	}
+	
+	public boolean containsWorkingTractionUnit() {
+		boolean returnValue = false;
+		for (Vehicle vehicle : this) {
+			if(vehicle.getType() == Type.WORKING) returnValue = true;
+		}
+		return returnValue;
 	}
 }

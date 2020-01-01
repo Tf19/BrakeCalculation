@@ -1,5 +1,6 @@
 package layout;
 
+import application.ControllerMain;
 import application.Main;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -25,12 +26,13 @@ public class ControllerVehicle {
 	public void setSelected(boolean value) {
 		isSelected = value;
 		if (value) {
+			Main.controller.setSelectedVehicle(vehicle);
 			anchorPane.setStyle("-fx-background-color:  #fca8b6;");
-			Main.controller.bdName.setText(vehicle.getName());
-			// ...
-			
-		} else
+		} else {
+			if (Main.controller.getSelectedVehicle() == vehicle)
+				Main.controller.setSelectedVehicle(null);
 			anchorPane.setStyle("-fx-background-color:  #f0f0f0;");
+		}
 	}
 
 	public boolean isSelected() {
@@ -42,7 +44,7 @@ public class ControllerVehicle {
 			vehicle.controller.setSelected(false);
 		}
 	}
-	
+
 	public void setVehicle(Vehicle vehicle) {
 		this.vehicle = vehicle;
 	}
