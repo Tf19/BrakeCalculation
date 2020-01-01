@@ -9,6 +9,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
@@ -17,6 +18,9 @@ import layout.AboutPane;
 import vehicles.Vehicle;
 
 public class ControllerMain {
+	
+	@FXML
+	public ImageView help;
 
 	// Timetable
 	@FXML
@@ -117,6 +121,8 @@ public class ControllerMain {
 	@FXML
 	public ImageView btDeleteBlockTrain;
 	@FXML
+	public ImageView btDeleteVehicle;
+	@FXML
 	public Text btMaxLengthReached;
 
 	// Grid
@@ -172,12 +178,14 @@ public class ControllerMain {
 	@FXML
 	public ImageView addVehicleTo23;
 	ImageView[] addVehicleList;
-	
 
 	@FXML
 	public void initialize() {
-		ttBrakePos.setItems(ttBrakePosList);
 		
+		help.setImage(new Image(getClass().getResourceAsStream("/resources/help_outline-50px.png")));
+
+		ttBrakePos.setItems(ttBrakePosList);
+
 		bdTemplate.setDisable(true);
 		bdTemplateLabel.setDisable(true);
 		bdName.setDisable(true);
@@ -193,7 +201,7 @@ public class ControllerMain {
 		bdAxlesCount.setDisable(true);
 		bdAxlesCountLabel.setDisable(true);
 		bdTuLeader.setDisable(true);
-		
+
 		brdPneumBrake.setSelected(true);
 		brdPneumBrake.setDisable(true);
 		brdDynamicBrake.setSelected(false);
@@ -228,18 +236,23 @@ public class ControllerMain {
 		brdPosRE160Label.setDisable(true);
 		brdPosRWB.setVisible(false);
 		brdPosRWBWeight.setVisible(false);
-		
+
 		addVehicleList = new ImageView[] { addVehicleTo0, addVehicleTo1, addVehicleTo2, addVehicleTo3, addVehicleTo4,
 				addVehicleTo5, addVehicleTo6, addVehicleTo7, addVehicleTo8, addVehicleTo9, addVehicleTo10,
 				addVehicleTo11, addVehicleTo12, addVehicleTo13, addVehicleTo14, addVehicleTo15, addVehicleTo16,
 				addVehicleTo17, addVehicleTo18, addVehicleTo19, addVehicleTo20, addVehicleTo21, addVehicleTo22,
 				addVehicleTo23 };
-		for (ImageView imageView : addVehicleList)
+		for (ImageView imageView : addVehicleList) {
 			imageView.setVisible(false);
+			imageView.setImage(new Image(getClass().getResourceAsStream("/resources/add_vehicle-100x150.png")));
+		}
 		addVehicleList[0].setVisible(true);
 		addVehicleList[1].setVisible(true);
 
 		btMaxLengthReached.setVisible(false);
+		btReverse.setImage(new Image(getClass().getResourceAsStream("/resources/change_direction_of_travel-50px.png")));
+		btDeleteBlockTrain.setImage(new Image(getClass().getResourceAsStream("/resources/delete_all-50px.png")));
+		btDeleteVehicle.setImage(new Image(getClass().getResourceAsStream("/resources/delete-50px.png")));
 	}
 
 	@FXML
@@ -272,7 +285,8 @@ public class ControllerMain {
 		if (x >= 0)
 			pushBackwardsFollowingPanes(x);
 		updateAddButtons();
-		if(Main.blockTrain.size() < Main.MAX_VEHICLES) btMaxLengthReached.setVisible(false);
+		if (Main.blockTrain.size() < Main.MAX_VEHICLES)
+			btMaxLengthReached.setVisible(false);
 	}
 
 	@FXML
@@ -400,7 +414,7 @@ public class ControllerMain {
 			return;
 		else if (Main.blockTrain.size() == Main.MAX_VEHICLES - 1)
 			btMaxLengthReached.setVisible(true);
-		
+
 		if (Main.blockTrain.containsWorkingTractionUnit())
 			vehicle = Main.newDefaultCoach();
 		pushForwardFollowingPanes(index);
@@ -465,13 +479,14 @@ public class ControllerMain {
 				addVehicleList[i].setVisible(false);
 		}
 	}
-	
+
 	public void setSelectedVehicle(Vehicle vehicle) {
 		selectedVehicle = vehicle;
 		bdName.setDisable(false);
-		if(vehicle != null) bdName.setText(vehicle.getName());
+		if (vehicle != null)
+			bdName.setText(vehicle.getName());
 	}
-	
+
 	public Vehicle getSelectedVehicle() {
 		return selectedVehicle;
 	}
