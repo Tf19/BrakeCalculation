@@ -9,6 +9,7 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -247,6 +248,9 @@
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
+               <tooltip>
+                  <Tooltip text="Das ist der Zugverband" />
+               </tooltip>
             </Label>
          </children>
       </AnchorPane>
@@ -365,8 +369,8 @@
                                     <Label fx:id="bdLengthLabel" text="Länge" GridPane.rowIndex="5" />
                                     <Label fx:id="bdAxlesCountLabel" text="Achsen" GridPane.rowIndex="6" />
                                     <JFXComboBox fx:id="bdVehicleType" prefHeight="17.0" prefWidth="109.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                    <JFXTextField fx:id="bdWeight" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                                    <JFXTextField fx:id="bdLength" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <JFXTextField fx:id="bdWeight" onKeyReleased="#bdWeightTextChanged" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <JFXTextField fx:id="bdLength" onKeyReleased="#bdLengthTextChanged" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                                     <JFXComboBox fx:id="bdAxlesCount" GridPane.columnIndex="1" GridPane.rowIndex="6" />
                                     <JFXComboBox fx:id="bdTemplate" prefHeight="16.0" prefWidth="117.0" GridPane.columnIndex="1" />
                                     <Label fx:id="bdTemplateLabel" text="Vorlage" />
@@ -488,10 +492,10 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="250 m" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Text layoutX="10.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20 m" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                  <Text layoutX="110.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="400 t" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Text layoutX="227.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="84 t" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Text fx:id="fTotalLengthCoaches" strokeType="OUTSIDE" strokeWidth="0.0" text="250 m" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Text fx:id="fTotalLengthWorkingTU" layoutX="10.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20 m" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Text fx:id="fTotalWeightCoaches" layoutX="110.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="400 t" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Text fx:id="fTotalWeightWorkingTU" layoutX="227.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="84 t" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                   <Text layoutX="227.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wagenzug" wrappingWidth="68.134765625" GridPane.columnIndex="1">
                      <font>
                         <Font name="System Bold" size="12.0" />
@@ -507,8 +511,8 @@
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Text>
-                  <Text layoutX="199.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="484 t" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                  <Text layoutX="10.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="270 m" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Text fx:id="fTotalWeightTotal" layoutX="199.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="484 t" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Text fx:id="fTotalLengthTotal" layoutX="10.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="270 m" GridPane.columnIndex="3" GridPane.rowIndex="1" />
                   <Text layoutX="68.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Masse" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="12.0" />

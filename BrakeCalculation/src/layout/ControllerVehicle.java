@@ -1,10 +1,10 @@
 package layout;
 
-import application.ControllerMain;
 import application.Main;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 import vehicles.Vehicle;
 
 public class ControllerVehicle {
@@ -13,6 +13,10 @@ public class ControllerVehicle {
 	public AnchorPane anchorPane;
 	@FXML
 	public Label vName;
+	@FXML
+	public Text vWeightAxes;
+	@FXML
+	public Text vLength;
 
 	private boolean isSelected;
 	private Vehicle vehicle;

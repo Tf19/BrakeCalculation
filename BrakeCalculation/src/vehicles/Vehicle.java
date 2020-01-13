@@ -3,7 +3,6 @@ package vehicles;
 import java.io.IOException;
 
 import application.Main;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
 import layout.ControllerVehicle;
@@ -41,12 +40,10 @@ public class Vehicle {
 			this.axes = 4;
 
 		try {
-//			vehiclePane = (AnchorPane) FXMLLoader.load(getClass().getResource("/layout/Vehicle.fxml"));
 			loader = new FXMLLoader(getClass().getResource("/layout/Vehicle.fxml"));
 			vehiclePane = loader.load();
 			controller = loader.getController();
 			controller.setVehicle(this);
-//			System.out.println("New vehiclePane created: " + vehiclePane);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -74,7 +71,17 @@ public class Vehicle {
 	
 	private void updateVehiclePane() {
 		controller.vName.setText(this.name);
+		controller.vWeightAxes.setText(this.weight + " t, " + this.axes + "x");
+		controller.vLength.setText(this.length + " m");
 		// ...
+		
+		// update footer
+		Main.controller.fTotalLengthCoaches.setText(Main.blockTrain.getTotalLengthOfCoaches() + " m");
+		Main.controller.fTotalWeightCoaches.setText(Main.blockTrain.getTotalWeightOfCoaches() + " t");
+		Main.controller.fTotalLengthWorkingTU.setText(Main.blockTrain.getTotalLengthOfWorkingTU() + " m");
+		Main.controller.fTotalWeightWorkingTU.setText(Main.blockTrain.getTotalWeightOfWorkingTU() + " t");
+		Main.controller.fTotalLengthTotal.setText(Main.blockTrain.getTotalLength() + " m");
+		Main.controller.fTotalWeightTotal.setText(Main.blockTrain.getTotalWeight() + " t");
 	}
 	
 	
@@ -116,8 +123,8 @@ public class Vehicle {
 	}
 
 	public void setWeight(float weight) {
-		if (weight <= 0)
-			throw new IllegalArgumentException("Weight must be greater than zero");
+		if (weight < 0)
+			throw new IllegalArgumentException("Weight must be at least zero");
 		this.weight = weight;
 		updateVehiclePane();
 	}
@@ -127,7 +134,7 @@ public class Vehicle {
 	}
 
 	public void setLength(float length) {
-		if (length <= 0)
+		if (length < 0)
 			throw new IllegalArgumentException("Length must be greater than zero");
 		this.length = length;
 		updateVehiclePane();
@@ -181,6 +188,17 @@ public class Vehicle {
 	}
 
 	public static enum Type {
-		WORKING, NON_WORKING, COACH;
+		
+		WORKING("arb. Tfz"), NON_WORKING("n. arb. Tfz"), COACH("Wagen");
+		
+		final String text;
+		
+		private Type(String s) {
+			text = s;
+		}
+		
+		public String toString() {
+			return text;
+		}
 	}
 }

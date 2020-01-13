@@ -18,7 +18,7 @@ import layout.AboutPane;
 import vehicles.Vehicle;
 
 public class ControllerMain {
-	
+
 	@FXML
 	public ImageView help;
 
@@ -29,7 +29,7 @@ public class ControllerMain {
 	public JFXTextField ttMbr;
 	@FXML
 	public JFXComboBox<String> ttBrakePos;
-	private ObservableList<String> ttBrakePosList = FXCollections.observableArrayList("G", "R/P", "R + Mg", "WB");
+	private ObservableList<String> ttBrakePosList = FXCollections.observableArrayList("G", "R/P", "WB");
 	@FXML
 	public JFXTextField ttWeightCoaches;
 	@FXML
@@ -46,8 +46,8 @@ public class ControllerMain {
 	public Label bdNameLabel;
 	@FXML
 	public JFXComboBox<String> bdVehicleType;
-	private ObservableList<String> bdVehicleTypeList = FXCollections.observableArrayList("arb. Tfz", "n. arb. Tfz",
-			"Wagen");
+	private ObservableList<String> bdVehicleTypeList = FXCollections.observableArrayList(
+			Vehicle.Type.WORKING.toString(), Vehicle.Type.NON_WORKING.toString(), Vehicle.Type.COACH.toString());
 	@FXML
 	public Label bdVehicleTypeLabel;
 	@FXML
@@ -179,9 +179,23 @@ public class ControllerMain {
 	public ImageView addVehicleTo23;
 	ImageView[] addVehicleList;
 
+	// footer
+	@FXML
+	public Text fTotalLengthCoaches;
+	@FXML
+	public Text fTotalWeightCoaches;
+	@FXML
+	public Text fTotalLengthWorkingTU;
+	@FXML
+	public Text fTotalWeightWorkingTU;
+	@FXML
+	public Text fTotalLengthTotal;
+	@FXML
+	public Text fTotalWeightTotal;
+
 	@FXML
 	public void initialize() {
-		
+
 		help.setImage(new Image(getClass().getResourceAsStream("/resources/help_outline-50px.png")));
 
 		ttBrakePos.setItems(ttBrakePosList);
@@ -257,10 +271,40 @@ public class ControllerMain {
 
 	@FXML
 	public void bdNameTextChanged() {
-		System.out.println("Text changed!");
 		for (Vehicle vehicle : Main.blockTrain) {
 			if (vehicle.controller.isSelected()) {
 				vehicle.setName(bdName.getText());
+			}
+		}
+	}
+
+	@FXML
+	public void bdWeightTextChanged() {
+		for (Vehicle vehicle : Main.blockTrain) {
+			if (vehicle.controller.isSelected()) {
+				try {
+					vehicle.setWeight(Float.parseFloat(bdWeight.getText()));
+				} catch (NullPointerException e) {
+					vehicle.setWeight(0);
+				} catch (NumberFormatException e) {
+					vehicle.setWeight(0);
+				}
+			}
+		}
+
+	}
+
+	@FXML
+	public void bdLengthTextChanged() {
+		for (Vehicle vehicle : Main.blockTrain) {
+			if (vehicle.controller.isSelected()) {
+				try {
+					vehicle.setLength(Float.parseFloat(bdLength.getText()));
+				} catch (NullPointerException e) {
+					vehicle.setLength(0);
+				} catch (NumberFormatException e) {
+					vehicle.setLength(0);
+				}
 			}
 		}
 	}
@@ -481,10 +525,42 @@ public class ControllerMain {
 	}
 
 	public void setSelectedVehicle(Vehicle vehicle) {
+
 		selectedVehicle = vehicle;
-		bdName.setDisable(false);
-		if (vehicle != null)
+
+		if (vehicle != null) {
 			bdName.setText(vehicle.getName());
+			bdVehicleType.setValue(vehicle.getType().toString());
+			bdWeight.setText(vehicle.getWeight() + "");
+			bdLength.setText(vehicle.getLength() + "");
+			bdAxlesCount.setValue(vehicle.getAxes());
+
+			bdTemplate.setDisable(false);
+			bdTemplateLabel.setDisable(false);
+			bdName.setDisable(false);
+			bdNameLabel.setDisable(false);
+			bdVehicleType.setDisable(false);
+			bdVehicleTypeLabel.setDisable(false);
+			bdWeight.setDisable(false);
+			bdWeightLabel.setDisable(false);
+			bdLength.setDisable(false);
+			bdLengthLabel.setDisable(false);
+			bdAxlesCount.setDisable(false);
+			bdAxlesCountLabel.setDisable(false);
+		} else {
+			bdTemplate.setDisable(true);
+			bdTemplateLabel.setDisable(true);
+			bdName.setDisable(true);
+			bdNameLabel.setDisable(true);
+			bdVehicleType.setDisable(true);
+			bdVehicleTypeLabel.setDisable(true);
+			bdWeight.setDisable(true);
+			bdWeightLabel.setDisable(true);
+			bdLength.setDisable(true);
+			bdLengthLabel.setDisable(true);
+			bdAxlesCount.setDisable(true);
+			bdAxlesCountLabel.setDisable(true);
+		}
 	}
 
 	public Vehicle getSelectedVehicle() {
